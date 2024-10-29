@@ -28,7 +28,7 @@ Open terminal and following commends:
 #### npm run dev
 
 
-### Screenshot
+### Screenshot 📸
 
 
 
