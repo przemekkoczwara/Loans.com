@@ -27,3 +27,10 @@ Open terminal and following commends:
 
 #### npm run dev
 
+
+### Screenshot
+
+
+
+<img width="1693" alt="Zrzut ekranu 2024-10-29 o 20 54 43" src="https://github.com/user-attachments/assets/3998d8c2-1dd2-47e9-ae67-24875e2d53ff">
+
