@@ -1,0 +1,131 @@
+@use '../settings/variables' as vars;
+
+main {
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 100px;
+}
+
+// into_ into
+
+.into_into {
+  width: 50%;
+  padding-right: 50px;
+}
+
+h1 {
+  color: vars.$main-color;
+  font-size: 4rem;
+  margin-top: 10px;
+}
+h3 {
+  color: vars.$accent-color;
+  font-size: 1.5rem;
+}
+
+ul {
+  display: flex;
+  text-align: left;
+  margin-top: 60px;
+  p {
+    font-size: 1rem;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 60px;
+    }
+  }
+}
+
+.icons_items {
+  position: relative;
+  font-weight: 700;
+  font-size: 2rem;
+  color: vars.$accent-color;
+  margin-bottom: 10px;
+}
+.icons_items::before {
+  content: '\f0c2';
+  font-family: 'Font Awesome 6 Free';
+}
+li:nth-child(2) .icons_items::before {
+  content: '\f3d1';
+  font-family: 'Font Awesome 6 Free';
+}
+
+li:nth-child(3) .icons_items::before {
+  content: '\f2f2';
+  font-family: 'Font Awesome 6 Free';
+}
+
+// intro_from
+
+.intro_form {
+  // width: 50%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 30px;
+  background-color: rgba(60, 141, 78, 1);
+  background-image: linear-gradient(
+    186deg,
+    rgba(60, 141, 78, 1) 10%,
+    rgba(41, 53, 86, 1) 85%
+  );
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  border-radius: 8px;
+
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+}
+
+label {
+  font-size: 0.8rem;
+}
+
+input {
+  margin: 12px 0 8px 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: rgba(245, 245, 245, 0.677);
+  padding: 5px;
+  border-radius: 8px;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.btn_form {
+  position: relative;
+  background-color: vars.$accent-color;
+  border-radius: 8px;
+  border: none;
+  padding: 20px 30px;
+  margin-top: 30px;
+  color: #fff;
+  width: 200px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+/* Ukrywa strzałki w inputach typu number w przeglądarkach WebKit (Chrome, Safari) */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Ukrywa strzałki w inputach typu number w przeglądarkach Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

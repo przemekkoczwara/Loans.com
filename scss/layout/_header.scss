@@ -1,0 +1,33 @@
+@use '/scss/settings/variables' as vars;
+
+header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_logo {
+  a {
+    color: vars.$main-color;
+    font-size: 2.5rem;
+  }
+}
+
+.navbar {
+  display: flex;
+  margin: 0;
+
+  li {
+    margin-right: 40px;
+    font-weight: bold;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+a:hover{
+  color:vars.$accent-color;
+}
